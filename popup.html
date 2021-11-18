@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/Rimouski.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app_title"><p>Weather</p></div>
+        <p class="notificationElement" id="notificationElement"></p>
+        <div class="weather_container" style="background-color: #F4F9FF;">
+            <img class="weather_icon_class" id="weather_icon_id" src="./icons/unknown.png" alt="image"></img>
+            <p id="temperature_value" class="temperature_value" style="padding: 0; margin: 0; font-size: 4em; color: #293251;">_ °<span>C</span></p>
+            <p class="temperature_description" id="temperature_description" style="padding: 8px;margin: 0;color: #293251;font-size: 1.2em;"></p>
+            <p class="location" id="location" style="margin: 0;padding: 0;color: #293251;font-size: 0.8em;"></p>
+        </div>
+    </div>
+</body>
+<script src="./scripts/popup.js">
+</script>
+</html>
