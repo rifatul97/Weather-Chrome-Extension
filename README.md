@@ -9,3 +9,4 @@ Display user selected cities' current weather status to the browser screen. Curr
 # TODO
 * Fetch weather data using web scraping to avoid api usage limitation and display include more information.
 * Implement Cookie system that will reduce background usage.
+* Add screenshots of the working application.
