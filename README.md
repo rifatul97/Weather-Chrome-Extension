@@ -1,5 +1,5 @@
 # Weather-Chrome-Extension
-Display user selected cities' current weather status to the browser screen. Currently API is not working.
+Display user selected cities' current weather status to the browser screen. Currently it is not really working.
 
 
 # Features
