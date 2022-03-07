@@ -1,8 +1,8 @@
 {
-    "name" : "obj next",
-    "description" : "my extention",
-    "version" : "0.1.0",
-    "manifest_version" : 2,
+    "name" : "Weather Extension",
+    "description" : "Weather Extension for Chrome Browser. Displays upto multiples cities weathers.",
+    "version" : "0.80",
+    "manifest_version" : 3,
     "icons" : {
         "16" : "./images/img16.png",
         "32" : "./images/img32.png",
