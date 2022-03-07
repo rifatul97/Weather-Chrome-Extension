@@ -28,13 +28,13 @@ function showWeather() {
 
 function getWeather(i) {
 
-    var API_key = "46bceb4cbebb858ccb27e0a40c75ce39";
+    var API_key = "8d1c2150f013605815d05d9b4a361890";
     var lat = citydb[i].lattitude;
     var lon = citydb[i].longitude; 
     var base = 'api.openweathermap.org/data/2.5/weather';
     var query = '?lat=' + lat + '&lon=' + lon + '&appid=' + API_key;
     
-    var endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=46bceb4cbebb858ccb27e0a40c75ce39`;
+    var endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid={API_key}`;
     
     fetch(endpoint)
     .then((response) => {
