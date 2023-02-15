@@ -1,14 +1,32 @@
 {
-    "name" : "Weather Extension",
+    "name" : "Weather Chrome Extension",
     "description" : "Weather Extension for Chrome Browser. Displays upto multiples cities weathers.",
     "version" : "0.80",
+    "author": "Rifatul Karim",
     "manifest_version" : 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "css": ["my-styles.css"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "permissions" : [
+        "activeTab",
+        "scripting",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
     "background" : {
-        "service_worker" : "./scripts/background.js"
+        "service_worker" : "background.js"
     },
-    "permissions" : ["storage", "scripting"],
-    "action" : {
-        "default_popup" : "popup.html"
+    "action": {
+        "default_title": "MyYoutubeList",
+        "default_popup": "popup.html"
     },
     "icons" : {
         "16" : "./images/img16.png",
